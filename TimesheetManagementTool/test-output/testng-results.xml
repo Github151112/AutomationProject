@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[===Connect to server===]]>
+    </line>
+    <line>
+      <![CDATA[===Connect to database===]]>
+    </line>
+    <line>
+      <![CDATA[ Launching chrome browser ]]>
+    </line>
+    <line>
+      <![CDATA[===close the connection with database]]>
+    </line>
+    <line>
+      <![CDATA[===close the server connection===]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-06-07T01:33:06Z" name="Default suite" finished-at="2024-06-07T01:33:12Z" duration-ms="6578">
+    <groups>
+    </groups>
+    <test started-at="2024-06-07T01:33:06Z" name="Default test" finished-at="2024-06-07T01:33:12Z" duration-ms="6578">
+      <class name="TestScript.CreateCustomerAndProjectTest">
+        <test-method is-config="true" signature="serverConnection()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:06Z" name="serverConnection" finished-at="2024-06-07T01:33:06Z" duration-ms="16" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[===Connect to server===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- serverConnection -->
+        <test-method is-config="true" signature="dbConnection()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:06Z" name="dbConnection" finished-at="2024-06-07T01:33:06Z" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[===Connect to database===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- dbConnection -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:06Z" name="setup" finished-at="2024-06-07T01:33:08Z" duration-ms="2384" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Launching chrome browser ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createCustomerAndProject()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:08Z" name="createCustomerAndProject" finished-at="2024-06-07T01:33:12Z" duration-ms="3865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomerAndProject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:12Z" name="tearDown" finished-at="2024-06-07T01:33:12Z" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDatabaseConnection()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:12Z" name="closeDatabaseConnection" finished-at="2024-06-07T01:33:12Z" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[===close the connection with database]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDatabaseConnection -->
+        <test-method is-config="true" signature="closeServerConnection()[pri:0, instance:TestScript.CreateCustomerAndProjectTest@68702e03]" started-at="2024-06-07T01:33:12Z" name="closeServerConnection" finished-at="2024-06-07T01:33:12Z" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[===close the server connection===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeServerConnection -->
+      </class> <!-- TestScript.CreateCustomerAndProjectTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
