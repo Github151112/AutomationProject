@@ -16,7 +16,7 @@ import PomPages.UserListPage;
 public class CreateUserTest extends BaseTest {
 	
 	
-	@Test(description = "verify the user is able to create the user or not")
+	@Test(description = "verify the user is able to create the user or not",groups = "RT")
 	public void toCreateUser() throws EncryptedDocumentException, IOException
 	{
 		//perform login operation

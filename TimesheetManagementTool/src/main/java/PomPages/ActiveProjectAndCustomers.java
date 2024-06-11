@@ -37,6 +37,29 @@ public class ActiveProjectAndCustomers extends BaseClass {
 	
 	@FindBy(name = "createProjectSubmit")
 	private WebElement createProjectButton;
+	
+	
+	@FindBy(linkText = "All")
+	private WebElement allLink;
+	
+	@FindBy(xpath = "//input[@value='Delete Selected']")
+	private WebElement deleteSelectedButton;
+	
+	@FindBy(xpath = "//input[@value='Delete These Customers']")
+	private WebElement deleteTheseCustomerButton;
+	
+
+	public WebElement getAllLink() {
+		return allLink;
+	}
+
+	public WebElement getDeleteSelectedButton() {
+		return deleteSelectedButton;
+	}
+
+	public WebElement getDeleteTheseCustomerButton() {
+		return deleteTheseCustomerButton;
+	}
 
 	public WebElement getCreateNewCustomerButton() {
 		return createNewCustomerButton;
@@ -78,6 +101,13 @@ public class ActiveProjectAndCustomers extends BaseClass {
 		s.selectByVisibleText(customerName);
 		projectNameTextField.sendKeys(projectName);
 		createProjectButton.click();
+	}
+	
+	public void deleteAllProjectAndCustomers()
+	{
+		allLink.click();
+		deleteSelectedButton.click();
+		deleteTheseCustomerButton.click();
 	}
 	
 	

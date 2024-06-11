@@ -15,7 +15,7 @@ import PomPages.OpenTaskPage;
 
 public class CreateCustomerAndProjectTest extends BaseTest {
 	
-	@Test
+	@Test(groups = "RT")
 	public void createCustomerAndProject() throws EncryptedDocumentException, IOException
 	{
 		//login

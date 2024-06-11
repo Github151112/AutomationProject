@@ -5,15 +5,19 @@ import java.net.PasswordAuthentication;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.UsernameAndPassword;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericLib.BaseTest;
+import GenericLib.CustomListener;
 import GenericLib.Flib;
 import PomPages.LoginPage;
 
+
+@Listeners(CustomListener.class)
 public class InvalidLoginTest extends BaseTest {
 
-	@Test(description = "Verify the user is able to login with different set of data or not")
+	@Test(description = "Verify the user is able to login with different set of data or not", groups = "FT")
 	public void invalidLogin() throws EncryptedDocumentException, IOException {
 
 		LoginPage lp = new LoginPage(driver);
